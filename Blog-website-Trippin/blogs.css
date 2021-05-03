@@ -1,0 +1,57 @@
+.content-blog, .content-about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    border: 0.1px solid white;
+    margin-top: 6em;
+}
+
+p{
+    width: 36em;
+    margin-left: 29em;
+    text-align: left;
+}
+
+.snaps{
+     height: 26em;
+     width: 36em;
+     margin-top: 2em;
+     margin-left: 1em;
+     margin-bottom: 2em;
+ }
+
+ .about-snap{
+     height: 26em;
+     width: 36em;
+     margin-top: 6em;
+ }
+
+ .about-author{
+     margin-left: 18.4em;
+     margin-top: 4em;
+     width: 25em;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bold;
+     color: beige;
+ }
+
+ .content-about{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    height: 900px;
+ }
+
+.next, .prev{
+    margin-top: 2em;
+    text-decoration: underline;
+}
+
+.next{
+     float: right;
+}
+
+.prev{
+    float: left;
+}
+
