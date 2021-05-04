@@ -1,0 +1,81 @@
+@import url("about.css");
+.content-blog,
+.content-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    border: 0.1px solid white;
+    margin-top: 6em;
+}
+
+p {
+    width: 36em;
+    margin-left: 29em;
+    text-align: left;
+    color: black;
+}
+
+.snaps {
+    height: 26em;
+    width: 36em;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.abt-author {
+    display: flex;
+    flex-direction: row;
+    border: 0.1px solid grey;
+    width: 36em;
+    margin-left: 28.9em;
+    margin-top: 2.5em;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.auth-avatar {
+    width: 150px;
+    height: 150px;
+    border: 0.1px solid grey;
+}
+
+.auth-details {
+    width: 422px;
+    height: 150px;
+    border: 0.1px solid grey
+}
+
+.avt {
+    width: 150px;
+    height: 155px
+}
+
+.abt-auth {
+    color: black;
+    margin-right: 18.5em;
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: px;
+}
+
+.abt-dtl {
+    margin-left: 1em;
+    width: 25em;
+    margin-top: 0.8em;
+    color: brown;
+}
+
+.next,
+.prev {
+    margin-top: 2em;
+    text-decoration: underline;
+}
+
+.next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}

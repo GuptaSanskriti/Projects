@@ -1,0 +1,20 @@
+.content-about {
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+.about-snap {
+    height: 26em;
+    width: 36em;
+    margin-top: 6em;
+}
+
+.about {
+    margin-left: 18.4em;
+    margin-top: 4em;
+    width: 25em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    color: beige;
+}

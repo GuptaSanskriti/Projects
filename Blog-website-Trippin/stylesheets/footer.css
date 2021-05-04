@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 12em;
+    margin: 1em;
+}
+
+.subscribe {
+    margin-left: 2em;
+    margin-top: 4em;
+    float: left;
+}
+
+#text-box {
+    padding: 11px;
+    width: 200px;
+    border: lightgray;
+    display: inline-block;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#sign-up {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.club {
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 900;
+    margin-left: 4em;
+    color: purple;
+}
+
+.travel {
+    margin-top: 4.5em;
+    margin-left: 1em;
+    color: #00008b;
+    text-decoration: underline;
+}
+
+.footer-title {
+    color: #00008b;
+    margin-right: 9em;
+}
+
+.icons {
+    margin-right: 2em;
+    font-size: 1.5em;
+    margin-top: 1em;
+}

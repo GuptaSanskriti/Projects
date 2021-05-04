@@ -1,0 +1,106 @@
+@import url("header.css");
+@import url("footer.css");
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.wrapper {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 650px 650px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "co co co ig ig ig" "desc desc po-1 po-1 po-2 po-2";
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+    border: 0.1px solid white;
+    background-image: url("../images/Background.jpg");
+}
+
+.quote {
+    color: white;
+    margin-left: 3.2em;
+    margin-top: 1.1em;
+}
+
+.content-1 {
+    grid-area: co;
+}
+
+.button {
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#explore {
+    border: 0.1px solid white;
+    color: white;
+    margin-top: 2em;
+    margin-left: 35em;
+}
+
+.content-2 {
+    grid-area: ig;
+}
+
+.tags {
+    color: grey;
+    margin-left: 7em;
+    text-align: center;
+}
+
+.tag {
+    margin-left: 21em;
+}
+
+.tag-2 {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.desc {
+    grid-area: desc;
+    text-align: left;
+    margin-left: 2em;
+}
+
+#read {
+    border: 0.1px solid #a9a9a9;
+    color: #a9a9a9;
+}
+
+.Post-1 {
+    grid-area: po-1;
+}
+
+.Post-2 {
+    grid-area: po-2;
+}
+
+.img {
+    width: 600px;
+    height: 400px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.image {
+    width: 400px;
+    height: 500px;
+}
+
+.Blog-3 {
+    margin-left: 50px;
+}
+
+@media(max-width:1400px) {
+    .wrapper {
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 500px;
+        grid-template-areas: "co" "ig" "desc" "po-1" "po-2"
+    }
+}
