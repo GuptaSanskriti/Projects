@@ -6,30 +6,32 @@ body {
     display: grid;
     margin-top: 100px;
     width: 100%;
-    grid-template-columns: 740px 740px;
-    grid-template-rows: 200px 500px 600px 600px 600px;
-    grid-template-areas: "hd hd hd hd" "pic-1 des-1 des-1 des-1" "des-2 pic-2 pic-2 pic-2" "pic-3 des-3 des-3 des-3" "des-4 pic-4 pic-4 pic-4";
+    grid-template-columns: 700px 700px 700px 700px;
+    grid-template-rows: 700px 700px 700px 700px;
+    grid-template-areas: "pic-1 des-1" "des-2 pic-2" "pic-3 des-3" "des-4 pic-4";
     border: 0.1px solid white;
 }
 
 .picture-1 {
     grid: pic-1;
-    margin-top: 5em;
+    margin-top: 15%;
 }
 
 .description-1 {
     grid-area: des-1;
     text-align: center;
+    margin-top: 25%;
 }
 
 .picture-2 {
     grid-area: pic-2;
+    margin-top: 5%;
 }
 
 .description-2 {
     grid-area: des-2;
     text-align: center;
-    margin-top: 8em;
+    margin-top: 20%;
 }
 
 .picture-3 {
@@ -39,7 +41,7 @@ body {
 .description-3 {
     grid-area: des-3;
     text-align: center;
-    margin-top: 6em;
+    margin-top: 20%;
 }
 
 .picture-4 {
@@ -49,15 +51,21 @@ body {
 .description-4 {
     grid-area: des-4;
     text-align: center;
-    margin-top: 6em;
-}
-
-.header {
-    grid-area: hd;
+    margin-top: 20%;
 }
 
 .Blog-img {
     height: 500px;
     width: 600px;
     margin-left: 60px;
+}
+
+@media(max-width: 1400px) {
+    .wrapper-blog {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 500px 10px 500x 10px 500px 10px 500px 10px;
+        grid-template-rows: 600px;
+        grid-template-areas: "pic-1" "des-1" "pic-2" "des-2" "pic-3" "des-3" "pic-4" "des-4";
+    }
 }
