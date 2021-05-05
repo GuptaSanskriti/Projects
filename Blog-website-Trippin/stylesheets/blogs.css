@@ -4,24 +4,26 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: auto;
+    width: 100%;
     border: 0.1px solid white;
     margin-top: 6em;
 }
 
-p {
+.sec {
     width: 36em;
-    margin-left: 29em;
-    text-align: left;
     color: black;
+    margin-left: 30%;
 }
 
 .snaps {
     height: 26em;
     width: 36em;
     margin-top: 2em;
-    margin-left: 1em;
     margin-bottom: 2em;
+}
+
+.blog-1 {
+    margin-right: 8em;
 }
 
 .abt-author {
@@ -29,8 +31,9 @@ p {
     flex-direction: row;
     border: 0.1px solid grey;
     width: 36em;
-    margin-left: 28.9em;
+    margin-left: 30%;
     margin-top: 2.5em;
+    margin-bottom: 5%
     box-shadow: 0 8px 6px -6px black;
 }
 
@@ -78,4 +81,12 @@ p {
 
 .prev {
     float: left;
+}
+
+@media(max-width:1500px) {
+    section {
+        width: 36em;
+        margin-left: 70%;
+        color: black;
+    }
 }
