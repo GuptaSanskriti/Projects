@@ -25,6 +25,10 @@
         align-items: center;
         padding: 1px 8px;
     }
+ 
+    .page-items {
+        padding: 8px;
+    }
     
     #insta {
         font-size: 25px;
