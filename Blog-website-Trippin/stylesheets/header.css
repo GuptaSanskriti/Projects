@@ -5,7 +5,6 @@
     .header {
         display: flex;
         flex-direction: row;
-        height: 4em;
         max-width: 100%;
         padding: 20px;
         align-items: center;
@@ -15,16 +14,18 @@
     .title {
         display: flex;
         flex-direction: column;
+        flex-grow: 2;
     }
     
     .pages {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 20%;
+        flex-grow: 1;
+        align-items: center;
+        padding: 1px 8px;
     }
     
     #insta {
         font-size: 25px;
-        align-items: center;
     }
