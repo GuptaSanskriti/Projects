@@ -1,20 +1,25 @@
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    height: 12em;
-    margin: 1em;
+    max-width: 100%;
+    padding: 16px;
 }
 
-.subscribe {
-    margin-left: 2em;
-    margin-top: 4em;
-    float: left;
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.icon-items {
+    display: flex;
+    flex-direction: column;
 }
 
 #text-box {
-    padding: 11px;
+    padding: 10px;
     width: 200px;
     border: lightgray;
     display: inline-block;
@@ -27,30 +32,28 @@
     background-color: black;
     color: white;
     box-shadow: 0 8px 6px -6px black;
+    font-family: sans-serif;
 }
 
 .club {
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-weight: 900;
-    margin-left: 4em;
     color: purple;
 }
 
 .travel {
-    margin-top: 4.5em;
-    margin-left: 1em;
+    align-self: center;
     color: #00008b;
     text-decoration: underline;
 }
 
 .footer-title {
     color: #00008b;
-    margin-right: 9em;
+    align-self: center;
 }
 
 .icons {
-    margin-right: 2em;
     font-size: 1.5em;
-    margin-top: 1em;
+    align-self: center;
 }
