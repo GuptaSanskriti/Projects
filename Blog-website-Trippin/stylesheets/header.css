@@ -1,46 +1,30 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #e6e6fa;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    height: 2.5em;
-    width: 100%;
-    margin-top: 1em;
-}
-
-.title {
-    text-align: center;
-    margin-left: 6em;
-    color: #00008b;
-}
-
-.quotation {
-    margin-left: 12em;
-    color: #722F37;
-    font-weight: 600;
-}
-
-#about {
-    margin-left: 1.5em;
-    color: #00008b;
-}
-
-.blogs {
-    margin-left: 3em;
-    color: #00008b;
-}
-
-#insta {
-    font-size: 20px;
-    margin-left: 16em;
-    margin-top: 1.5em;
-}
+    a:link {
+        text-decoration: none;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        height: 4em;
+        max-width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20%;
+    }
+    
+    #insta {
+        font-size: 25px;
+        align-items: center;
+    }
