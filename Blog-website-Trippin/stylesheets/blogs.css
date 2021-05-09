@@ -4,59 +4,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: center;
     width: 100%;
     border: 0.1px solid white;
 }
 
-.content-blog > div {
-    margin: 20px;
+.snaps, .avt {
+  width: 100%;
 }
 
-.para {
-    color: black;
-    width: 500px;
-    align-self: center;
-}
-
-.snaps {
-    height: 400px;
-}
-
-.abt-author {
-    display: flex;
-    flex-direction: row;
+#abt-author {
     border: 0.1px solid grey;
-    width: 36em;
     box-shadow: 0 8px 6px -6px black;
-    align-self: center;
-}
-
-.auth-avatar {
-    border: 0.1px solid grey;
-    flex-grow: 1;
-}
-
-.auth-details {
-    border: 0.1px solid grey;
-    flex-grow: 2;
-}
-
-.avt {
-    width: 100%;
-    height: 160px;
-}
-
-.abt-auth {
-    color: black;
-    font-size: 16px;
-    font-weight: 900;
-}
-
-.abt-dtl {
-    width: 25em;
-    color: brown;
-}
+} 
 
 .next,
 .prev {

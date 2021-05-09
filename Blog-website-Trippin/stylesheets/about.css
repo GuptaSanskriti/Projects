@@ -1,19 +1,14 @@
 .content-about {
     background-image: url('../images/back.jpg');
     background-repeat: no-repeat;
-}
-
-.content-about > div{
-    margin: 40px;
+    padding: 20px;
 }
 
 .about-snap {
-    height: 500px;
+    width: 100%;
 }
 
-.about {
+#about-pg {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     color: beige;
-    width: 600px;
-    align-self: center;
 }
