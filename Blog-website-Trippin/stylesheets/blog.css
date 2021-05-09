@@ -1,71 +1,17 @@
-body {
-    font-family: Verdana, sans-serif;
-}
-
 .wrapper-blog {
-    display: grid;
-    margin-top: 100px;
-    width: 100%;
-    grid-template-columns: 700px 700px 700px 700px;
-    grid-template-rows: 700px 700px 700px 700px;
-    grid-template-areas: "pic-1 des-1" "des-2 pic-2" "pic-3 des-3" "des-4 pic-4";
     border: 0.1px solid white;
 }
 
-.picture-1 {
-    grid: pic-1;
-    margin-top: 15%;
-}
-
-.description-1 {
-    grid-area: des-1;
-    text-align: center;
-    margin-top: 25%;
-}
-
-.picture-2 {
-    grid-area: pic-2;
-    margin-top: 5%;
-}
-
-.description-2 {
-    grid-area: des-2;
-    text-align: center;
-    margin-top: 20%;
-}
-
-.picture-3 {
-    grid-area: pic-3;
-}
-
-.description-3 {
-    grid-area: des-3;
-    text-align: center;
-    margin-top: 20%;
-}
-
-.picture-4 {
-    grid-area: pic-4;
-}
-
-.description-4 {
-    grid-area: des-4;
-    text-align: center;
-    margin-top: 20%;
+.col-md-6{
+    padding: 40px;
 }
 
 .Blog-img {
-    height: 500px;
-    width: 600px;
-    margin-left: 60px;
+    height: 400px;
+    width: 100%;
 }
 
-@media(max-width: 1400px) {
-    .wrapper-blog {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 500px 10px 500x 10px 500px 10px 500px 10px;
-        grid-template-rows: 600px;
-        grid-template-areas: "pic-1" "des-1" "pic-2" "des-2" "pic-3" "des-3" "pic-4" "des-4";
-    }
+#headline{
+    align-self: center;
+    text-align: center;
 }
