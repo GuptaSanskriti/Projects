@@ -1,52 +1,32 @@
-const data = [
-  {
-     id: 1,
-     name: "section-1",
-     info: "#section1"
-  },
-  {
-      id: 2,
-      name: "section-2",
-      info: "#section2"
-   },
-   {
-      id: 3,
-      name: "section-3",
-      info: "#section3"
-   },
-   {
-      id: 4,
-      name: "section-4",
-      info: "#section4"
-   }
-  ];
-
-const navMenu = document.querySelector('.navbar__menu'); 
-const classes = ['section1', 'section2', 'section3', 'section4'];
+//Declaring global variables
 const sections = document.querySelectorAll('section');
+const navList = document.querySelector('#navbar__list');
 
-const buildCard = (card, classStyle) => {
+//iterating over section array and creating list dynamically
+const secList = Array.from(document.getElementsByTagName('section'));
+for (let i = 1; i <= secList.length; i++){
+  //Creating elements for lists
+  const listItem = document.createElement('li');
+  listItem.className= 'section' + i;
+  
+  const secName = document.createElement('h4');
+  const menu__link = document.createElement('a');
+  menu__link.textContent = 'section-' + i;
+  menu__link.setAttribute('href', '#section' + i );
+  
+  //adding elements to list
+  navList.appendChild(listItem);
+  secName.append(menu__link);
+  listItem.append(secName);
+  menu__link.classList.add('menu__link');
+}
 
-const list = document.createElement('li');
-list.classList.add(classStyle);
-const sec_name = document.createElement('h4');
-const menu__link = document.createElement('a');
+ document.addEventListener("scroll", function() {
+   makeActive();
+ });
 
-navMenu.append(list);
-sec_name.append(menu__link);
-list.append(sec_name);
-
-menu__link.textContent = card.name;
-menu__link.setAttribute('href', card.info);
-menu__link.classList.add('menu__link');
-};
-
-data.forEach((card, i) => {
-  buildCard(card, classes[i]);
-  });
-
+//Checking viewport sections and highlighting that section
 const lists = document.querySelector('li');
-
 function makeActive(){
     for(const section of sections){
         const box = section.getBoundingClientRect();
@@ -61,6 +41,17 @@ function makeActive(){
     }
 }
 
-document.addEventListener("scroll", function() {
-    makeActive();
+//adding smooth scroll through target
+const links = document.querySelectorAll(".main__hero ul a");
+for (const link of links) {
+  link.addEventListener("click", sectionClick);
+}
+ 
+function sectionClick(e) {
+  e.preventDefault();
+  const secLink = this.getAttribute("href");
+ 
+  document.querySelector(secLink).scrollIntoView({
+    behavior: "smooth"
   });
+}
