@@ -31,10 +31,10 @@ const sendData = (req, res) => {
     res.send(projectData);
   }
   
-  app.get('/all', sendData);
+app.get('/all', sendData);
   
   //POST route
-  const addData = (req, res) => {
+const addData = (req, res) => {
     let data = req.body;
     projectData['date'] = data.date;
     projectData['temp'] = data.temp;
@@ -42,6 +42,6 @@ const sendData = (req, res) => {
   
     res.send(projectData);
     console.log(projectData);
-  }
-  app.post('/add', addData);
+}
+app.post('/add', addData);
   

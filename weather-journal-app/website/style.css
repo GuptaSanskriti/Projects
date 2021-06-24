@@ -7,8 +7,8 @@ body{
     display: grid;
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
+    height:100%;
+    background: teal;
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
@@ -16,8 +16,20 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
+#generate{
+    cursor: pointer;
+}
 
+.warning {
+    color: #ff0000;
+}
+
+.warning.show {
+    display: block;
+}
+
+.box{
+    color: #FF5049 !important;
 }
 
 .entry{
@@ -57,7 +69,7 @@ input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
+    background: #F5F5DC;
     color: #f0d43a;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
@@ -65,9 +77,9 @@ input{
 }
 
 button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
+    width: 300px;
+    height: 80px;
+    background: #29A0B1;
     color: #f0d43a;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
@@ -79,9 +91,9 @@ h1{
 }
 
 textarea{
-    background:#22b2da;
+    background: #F5F5DC;
     color: #f0d43a;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Oswald', sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/
